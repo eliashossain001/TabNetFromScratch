@@ -10,7 +10,7 @@
 
 ## 📂 Folder Structure
 
-bash ```
+ ```
 
 TabNetFromScratch/
 ├── data/
