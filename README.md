@@ -43,8 +43,7 @@ TabNetFromScratch/
   ```bash
   python data/generate_data.py
   # Outputs data/synthetic_data.csv
-````
-````
+
 ### `models/feature_transformer.py`
 
 * **Class**: `FeatureTransformer`
@@ -55,8 +54,7 @@ TabNetFromScratch/
 
 * **Class**: `AttentiveTransformer`
 * **Role**: Computes sparse feature masks via linear layer, batch norm, and softmax.
-````
-````
+  
 ### `models/tabnet_encoder.py`
 
 * **Class**: `TabNetEncoder`
@@ -65,23 +63,17 @@ TabNetFromScratch/
   * **Classification**: `forward(x)` → predicts labels.
   * **Representation**: `forward(x, return_representation=True)` → outputs latent features.
 * **Parameters**: `input_dim`, `hidden_dim`, `n_steps`.
-````
 
-````
 ### `models/tabnet_decoder.py`
 
 * **Class**: `TabNetDecoder`
 * **Purpose**: Reconstructs original inputs from encoder representations via a linear decoder.
-````
-
-````
+  
 ### `utils/train.py`
 
 * **Function**: `train_model(model, X, y, ...)`
 * **Role**: Trains `TabNetEncoder` with a classification head using BCELoss.
-````
 
-````
 ### `main.py`
 
 * **Workflow**:
@@ -92,9 +84,7 @@ TabNetFromScratch/
   4. Save encoder weights to `encoder.pt`.
   5. Print classification metrics (accuracy, precision, recall, F1, confusion matrix).
 
-````
 
-````
 ### `run_decoder.py`
 
 * **Workflow**:
@@ -104,9 +94,7 @@ TabNetFromScratch/
   3. Run encoder in representation mode.
   4. Reconstruct inputs via `TabNetDecoder`.
   5. Print reconstruction metrics (SSE, MSE, RMSE, feature-wise/sample-wise errors).
-````
 
-````
 ### `requirements.txt`
 
 * **Dependencies**:
@@ -116,9 +104,7 @@ TabNetFromScratch/
   pandas
   scikit-learn
   ```
-````
 
-````
 ## 🚀 Setup & Usage
 
 1. **Install dependencies**:
@@ -126,34 +112,24 @@ TabNetFromScratch/
    ```bash
    pip install -r requirements.txt
    ```
-````
 
-````
 2. **Generate data**:
 
    ```bash
    python data/generate_data.py
    ```
-````
 
-````
 3. **Train for classification**:
 
    ```bash
    python main.py
    ```
-````
 
-````
 4. **Run autoencoder reconstruction**:
 
    ```bash
    python run_decoder.py
    ```
-````
----
-
-````
 
 ## 🔧 Hyperparameter Tuning
 
@@ -161,17 +137,11 @@ TabNetFromScratch/
 * **`n_steps`**: Number of decision steps (default: 3).
 * **Learning rate & epochs**: Adjust in `utils/train.py`.
 * **Feature scaling**: Standardize inputs for lower reconstruction error.
-````
-
-````
 
 ## 📚 References
 
 * Arik, S. Ö., & Pfister, T. (2021). TabNet: Attentive Interpretable Tabular Learning. Proceedings of the AAAI Conference on Artificial Intelligence, 35(8), 6679-6687. https://doi.org/10.1609/aaai.v35i8.16826.
 
----
-````
-````
 ## 👨‍💼 Author
 
 **Elias Hossain**  
