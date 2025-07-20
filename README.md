@@ -1,4 +1,3 @@
-```markdown
 # TabNetFromScratch
 
 **TabNet** is a deep learning architecture tailored for tabular data. It alternates between feature transformers and attentive transformers to achieve sparsity, interpretability, and high accuracy. This repository provides a **from-scratch PyTorch implementation**, including:
@@ -6,7 +5,9 @@
 - **TabNet Encoder**: for supervised classification.
 - **TabNet Decoder**: for self-supervised reconstruction (autoencoder).
 
----
+# TabNet Main Architecture
+<img width="2792" height="1440" alt="image" src="https://github.com/user-attachments/assets/9c40edde-ed10-409e-888c-3774c16face0" />
+Figure: Overall structure of TabNet. (a) is the encoder part that encodes the input data with the transformer manner. (b) indicates a decoder that restores the encoded representation to the original data representation. And (c) and (d) show the structure of the feature transformer and the attentive transformer, respectively. 
 
 ## 📂 Folder Structure
 
@@ -48,8 +49,7 @@ TabNetFromScratch/
 
 * **Class**: `FeatureTransformer`
 * **Role**: Applies GLU layers, batch normalization, and skip connections to transform inputs.
-````
-````
+  
 ### `models/attentive_transformer.py`
 
 * **Class**: `AttentiveTransformer`
