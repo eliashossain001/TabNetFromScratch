@@ -5,11 +5,12 @@
 
 - **TabNet Encoder**: for supervised classification.
 - **TabNet Decoder**: for self-supervised reconstruction (autoencoder).
-```
+
+---
 
 ## 📂 Folder Structure
 
-```bash
+bash```
 
 TabNetFromScratch/
 ├── data/
@@ -31,17 +32,20 @@ TabNetFromScratch/
 
 ```
 
+---
+
 ## 📄 File Descriptions
 
 ### `data/generate_data.py`
-- **Purpose**: Creates a synthetic dataset (1000 samples, 20 features, binary labels).
-- **Usage**:
+
+* **Purpose**: Creates a synthetic dataset (1000 samples, 20 features, binary labels).
+* **Usage**:
   ```bash
   python data/generate_data.py
   # Outputs data/synthetic_data.csv
-```
+````
 
-### models/feature_transformer.py
+### `models/feature_transformer.py`
 
 * **Class**: `FeatureTransformer`
 * **Role**: Applies GLU layers, batch normalization, and skip connections to transform inputs.
@@ -100,7 +104,6 @@ TabNetFromScratch/
   scikit-learn
   ```
 
-
 ## 🚀 Setup & Usage
 
 1. **Install dependencies**:
@@ -135,18 +138,3 @@ TabNetFromScratch/
 * **`n_steps`**: Number of decision steps (default: 3).
 * **Learning rate & epochs**: Adjust in `utils/train.py`.
 * **Feature scaling**: Standardize inputs for lower reconstruction error.
-
----
-
-## 📚 References
-
-* Arik, S. Ö., & Pfister, T. (2021). TabNet: Attentive Interpretable Tabular Learning. Proceedings of the AAAI Conference on Artificial Intelligence, 35(8), 6679-6687. https://doi.org/10.1609/aaai.v35i8.16826.
-
----
-
-## 👨‍💼 Author
-
-**Elias Hossain**  
-_Machine Learning Researcher | PhD Student | AI x Reasoning Enthusiast_
-
-[![GitHub](https://img.shields.io/badge/GitHub-EliasHossain001-blue?logo=github)](https://github.com/EliasHossain001)
