@@ -10,7 +10,7 @@
 
 ## 📂 Folder Structure
 
-```
+bash ```
 
 TabNetFromScratch/
 ├── data/
@@ -30,7 +30,7 @@ TabNetFromScratch/
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project overview
 
-````
+```
 
 ---
 
