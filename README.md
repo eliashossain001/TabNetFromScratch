@@ -136,9 +136,8 @@ TabNetFromScratch/
 
 ---
 
-## 📜 License
+## Reference
 
-Released under the **MIT License**. See [LICENSE](LICENSE) for details.
+* Arik, S. Ö., & Pfister, T. (2021). TabNet: Attentive Interpretable Tabular Learning. Proceedings of the AAAI Conference on Artificial Intelligence, 35(8), 6679-6687. https://doi.org/10.1609/aaai.v35i8.16826.
 
-```
 ```
