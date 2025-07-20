@@ -10,7 +10,7 @@
 
 ## 📂 Folder Structure
 
- ```
+```
 
 TabNetFromScratch/
 ├── data/
