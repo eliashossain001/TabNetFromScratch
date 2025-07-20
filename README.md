@@ -5,6 +5,13 @@
 - **TabNet Encoder**: for supervised classification.
 - **TabNet Decoder**: for self-supervised reconstruction (autoencoder).
 
+# Primary Architecture of TabNet
+<img width="2772" height="1418" alt="image" src="https://github.com/user-attachments/assets/60e292f5-7125-4d53-a534-305ebf59c8a5" />
+
+Figure: Overall structure of TabNet. (a) is the encoder part that encodes the input data with the transformer manner. (b) indicates a decoder that restores the encoded representation to the original data representation. And (c) and (d) show the structure of the feature transformer and the attentive transformer, respectively. Reference: Arık, S. Ö., Pérez, J., Ribeiro, M. T., & Nori, H. (2021). TabNet: Attentive interpretable tabular learning. *Proceedings of the AAAI Conference on Artificial Intelligence*, 35(12), 6679–6687.
+
+
+
 ## 📂 Folder Structure
 
 ```
