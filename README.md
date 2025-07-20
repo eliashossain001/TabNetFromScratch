@@ -41,7 +41,7 @@ TabNetFromScratch/
   # Outputs data/synthetic_data.csv
 ```
 
-### `models/feature_transformer.py`
+### models/feature_transformer.py
 
 * **Class**: `FeatureTransformer`
 * **Role**: Applies GLU layers, batch normalization, and skip connections to transform inputs.
