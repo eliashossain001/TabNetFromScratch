@@ -5,8 +5,7 @@
 
 - **TabNet Encoder**: for supervised classification.
 - **TabNet Decoder**: for self-supervised reconstruction (autoencoder).
-
----
+```
 
 ## 📂 Folder Structure
 
@@ -32,8 +31,6 @@ TabNetFromScratch/
 
 ```
 
----
-
 ## 📄 File Descriptions
 
 ### `data/generate_data.py`
@@ -42,7 +39,7 @@ TabNetFromScratch/
   ```bash
   python data/generate_data.py
   # Outputs data/synthetic_data.csv
-````
+```
 
 ### `models/feature_transformer.py`
 
@@ -103,7 +100,6 @@ TabNetFromScratch/
   scikit-learn
   ```
 
----
 
 ## 🚀 Setup & Usage
 
