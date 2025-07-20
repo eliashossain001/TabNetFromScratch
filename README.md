@@ -5,13 +5,9 @@
 - **TabNet Encoder**: for supervised classification.
 - **TabNet Decoder**: for self-supervised reconstruction (autoencoder).
 
-# TabNet Main Architecture
-<img width="2792" height="1440" alt="image" src="https://github.com/user-attachments/assets/9c40edde-ed10-409e-888c-3774c16face0" />
-Figure: Overall structure of TabNet. (a) is the encoder part that encodes the input data with the transformer manner. (b) indicates a decoder that restores the encoded representation to the original data representation. And (c) and (d) show the structure of the feature transformer and the attentive transformer, respectively. 
-
 ## 📂 Folder Structure
 
-bash```
+```
 
 TabNetFromScratch/
 ├── data/
@@ -31,8 +27,9 @@ TabNetFromScratch/
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project overview
 
-```
-```
+````
+
+
 ## 📄 File Descriptions
 
 ### `data/generate_data.py`
@@ -47,12 +44,12 @@ TabNetFromScratch/
 
 * **Class**: `FeatureTransformer`
 * **Role**: Applies GLU layers, batch normalization, and skip connections to transform inputs.
-  
+
 ### `models/attentive_transformer.py`
 
 * **Class**: `AttentiveTransformer`
 * **Role**: Computes sparse feature masks via linear layer, batch norm, and softmax.
-  
+
 ### `models/tabnet_encoder.py`
 
 * **Class**: `TabNetEncoder`
@@ -66,7 +63,7 @@ TabNetFromScratch/
 
 * **Class**: `TabNetDecoder`
 * **Purpose**: Reconstructs original inputs from encoder representations via a linear decoder.
-  
+
 ### `utils/train.py`
 
 * **Function**: `train_model(model, X, y, ...)`
@@ -81,7 +78,6 @@ TabNetFromScratch/
   3. Call `train_model`.
   4. Save encoder weights to `encoder.pt`.
   5. Print classification metrics (accuracy, precision, recall, F1, confusion matrix).
-
 
 ### `run_decoder.py`
 
@@ -129,6 +125,8 @@ TabNetFromScratch/
    python run_decoder.py
    ```
 
+---
+
 ## 🔧 Hyperparameter Tuning
 
 * **`hidden_dim`**: Size inside feature transformers (default: 64).
@@ -136,13 +134,11 @@ TabNetFromScratch/
 * **Learning rate & epochs**: Adjust in `utils/train.py`.
 * **Feature scaling**: Standardize inputs for lower reconstruction error.
 
-## 📚 References
+---
 
-* Arik, S. Ö., & Pfister, T. (2021). TabNet: Attentive Interpretable Tabular Learning. Proceedings of the AAAI Conference on Artificial Intelligence, 35(8), 6679-6687. https://doi.org/10.1609/aaai.v35i8.16826.
+## 📜 License
 
-## 👨‍💼 Author
+Released under the **MIT License**. See [LICENSE](LICENSE) for details.
 
-**Elias Hossain**  
-_Machine Learning Researcher | PhD Student | AI x Reasoning Enthusiast_
-
-[![GitHub](https://img.shields.io/badge/GitHub-EliasHossain001-blue?logo=github)](https://github.com/EliasHossain001)
+```
+```
