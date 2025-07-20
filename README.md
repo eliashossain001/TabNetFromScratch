@@ -32,7 +32,7 @@ TabNetFromScratch/
 └── README.md                    # Project overview
 
 ```
-
+```
 ## 📄 File Descriptions
 
 ### `data/generate_data.py`
