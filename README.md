@@ -106,7 +106,7 @@ TabNetFromScratch/
   scikit-learn
   ```
 
-## 🚀 Setup & Usage
+## Setup & Usage
 
 1. **Install dependencies**:
 
@@ -134,7 +134,7 @@ TabNetFromScratch/
 
 ---
 
-## 🔧 Hyperparameter Tuning
+## Hyperparameter Tuning
 
 * **`hidden_dim`**: Size inside feature transformers (default: 64).
 * **`n_steps`**: Number of decision steps (default: 3).
